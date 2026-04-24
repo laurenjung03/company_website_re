@@ -4,10 +4,10 @@ import { HiMenu } from "react-icons/hi";
 import { HiX } from "react-icons/hi";
 const menuItems = [
   { path: "/", label: "홈" },
-  { path: "/info", label: "회사정보" },
-  { path: "/leader", label: "임원소개" },
+  { path: "/about", label: "회사정보" },
+  { path: "/leadership", label: "임원소개" },
   { path: "/board", label: "업무게시판" },
-  { path: "/tech", label: "제공기술" },
+  { path: "/our-service", label: "제공기술" },
   { path: "/contact", label: "문의하기" },
 ];
 const MenuItem = ({ path, label }) => (
@@ -26,10 +26,10 @@ function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="fixed top-0 left-0 bg-yellow text-black z-50 w-full p-4">
-      <div className="container mx-auto flex justify-between items-center ">
+    <nav className="fixed top-0 left-0 bg-white text-black z-50 w-full p-4 shadow-md">
+      <div className="container mx-auto   flex justify-between items-center">
         {/* nav가 전체 네비게이션 이고, 그안에 {회사이름, 소개버튼들, 언어 } 선택하려고 둔건가?  */}
-        <h1 className="text-xl">ABC Company</h1>
+        <h1 className="text-2xl ml-12 ">ABC Company</h1>
 
         <div className="hidden lg:flex flex-1 justify-center">
           <ul className="flex gap-8 text-lg">
